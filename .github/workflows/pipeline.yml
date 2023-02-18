@@ -1,4 +1,4 @@
-name: Node.js CI
+name: tsecr pipeline
 
 on:
   push:
@@ -54,6 +54,6 @@ jobs:
       - name: Publish to NPM
         if: success()
         run: |
-          npm publish
+          pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
