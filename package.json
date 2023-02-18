@@ -1,6 +1,6 @@
 {
   "name": "tsecr",
-  "version": "0.1.0",
+  "version": "0.1.0.alpha",
   "author": "Alejandro Miranda Rodríguez",
   "license": "MIT",
   "type": "module",
