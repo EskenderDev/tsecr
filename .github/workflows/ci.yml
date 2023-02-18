@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
 
-env:
-  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+# env:
+#   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   build:
@@ -54,5 +54,6 @@ jobs:
       - name: Publish to NPM
         if: success()
         run: |
-          echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
-          npm publish
+          pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
