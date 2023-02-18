@@ -1,10 +1,10 @@
 name: tsecr pipeline
 
 on:
-  # push:
-  #   branches: [main]
   release:
     types: [created]
+  # push:
+  #   branches: [main]
 
 # env:
 #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
