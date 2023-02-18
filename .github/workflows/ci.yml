@@ -52,4 +52,4 @@ jobs:
         if: success()
         run: |
           echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
-          pnpm publish
+          npm publish
