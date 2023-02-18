@@ -39,9 +39,9 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-      - name: Install Playwright
-        run: |
-          pnpm dlx playwright install --with-deps chromium
+      # - name: Install Playwright
+      #   run: |
+      #     pnpm dlx playwright install --with-deps chromium
       - name: Test Unit
         run: |
           pnpm run test:unit
