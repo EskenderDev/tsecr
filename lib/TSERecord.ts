@@ -1,5 +1,4 @@
 import { Browser, BrowserContext, chromium, Page } from "playwright";
-import config from "@/config";
 import { DNI, Field, Record, TSEContext } from "@/types";
 import { IRecord } from "./IRecord";
 
