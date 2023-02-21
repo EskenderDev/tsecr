@@ -57,6 +57,6 @@ jobs:
       - name: Publish to NPM
         if: success()
         run: |
-          npm publish --no-git-checks
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
